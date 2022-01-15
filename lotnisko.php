@@ -36,15 +36,17 @@
       $wynik=mysqli_query($baza,'SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC');
       while($r=mysqli_fetch_array($wynik))
       {
-   
+     echo "<tr>";
      echo "<td>";
      echo $r["czas"];
-     echo "</td>";  
-          
+     echo "</td>"; 
+   
+         
+       
      echo "<td>";
      echo $r["kierunek"];
      echo "</td>";   
-          
+     
           
           
      
@@ -55,11 +57,12 @@
      echo "<td>";
      echo $r["status_lotu"];
      echo "</td>";
-        
+     echo "</tr>"; 
 
       
       }
       
+     
       mysqli_close($baza);
        echo isset($row['zespol1']);
       
