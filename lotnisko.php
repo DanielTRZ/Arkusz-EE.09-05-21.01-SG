@@ -48,8 +48,6 @@
      echo "</td>";   
      
           
-          
-     
      echo "<td>";
      echo $r["nr_rejsu"];
      echo "</td>";  
@@ -62,10 +60,7 @@
       
       }
       
-     
       mysqli_close($baza);
-      
-      
   ?>
 </table>
    
@@ -92,7 +87,7 @@
   </div>
   
   <div id="stopka2">
-   Autor:0000000000
+ Autor:0000000000
   </div>
   
   </body>
