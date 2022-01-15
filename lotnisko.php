@@ -64,7 +64,7 @@
       
      
       mysqli_close($baza);
-       echo isset($row['zespol1']);
+      
       
   ?>
 </table>
