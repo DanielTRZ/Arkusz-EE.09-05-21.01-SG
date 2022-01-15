@@ -16,6 +16,9 @@
 
   </head>
   <body>
+  <div id="baner1"></div>
+  <div id="baner2"></div>
+  <div id="baner3"></div>
 
   </body>
 
