@@ -25,35 +25,45 @@
   
   <div id="glowny">
   <table>
-   <thead>
-      <tr>
+   <tr>
          <th>czas</th> <th>kierunek</th> <th>numer rejsu</th> <th>status</th>
       </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Nowak</td> <td>4+gggg</td> <td>Mazur</td> <td>3-</td>
-      </tr>
       
-      <?php
-			require('connect.php');
+  <?php
+    $baza=mysqli_connect('localhost','root','','egzaminsamoloty');
+     if(mysqli_connect_errno())
+     {echo"wystapil blad polaczenia z baza";}
+      $wynik=mysqli_query($baza,'SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC');
+      while($r=mysqli_fetch_array($wynik))
+      {
+   
+     echo "<td>";
+     echo $r["czas"];
+     echo "</td>";  
+          
+     echo "<td>";
+     echo $r["kierunek"];
+     echo "</td>";   
+          
+          
+          
+     
+     echo "<td>";
+     echo $r["nr_rejsu"];
+     echo "</td>";  
+        
+     echo "<td>";
+     echo $r["status_lotu"];
+     echo "</td>";
+        
 
-			$qrr = mysqli_query($qrr, 'SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC');
-
-			while ($V = mysqli_fetch_assoc($qrr)) {
-				echo "<tr>";
-				for ($o = 0; $o <= 4; $o++) {
-					echo "<td>";
-					echo $V[$o];
-					echo "</td>";
-				}
-				echo "</tr>";
-			}
-			?>
       
+      }
       
+      mysqli_close($baza);
+       echo isset($row['zespol1']);
       
-   </tbody>
+  ?>
 </table>
    
     
@@ -73,7 +83,7 @@
 				$cookie_secure  = false;
 				$cookie_httponly = false;
 				setcookie($cookie_name, $cookie_value, $cookie_time, $cookie_path, $cookie_domain, $cookie_secure, $cookie_httponly);
-				echo "<p  style='font-style: italic;'>Witaj ponownie na stronie lotniska</p>";
+				echo "<p  style='font-style:italic;'>Witaj ponownie na stronie lotniska</p>";
 			}   
       ?>  
   </div>
