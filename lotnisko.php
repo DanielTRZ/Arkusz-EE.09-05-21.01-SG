@@ -34,6 +34,25 @@
       <tr>
          <td>Nowak</td> <td>4+gggg</td> <td>Mazur</td> <td>3-</td>
       </tr>
+      
+      <?php
+			require('connect.php');
+
+			$qrr = mysqli_query($qrr, 'SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC');
+
+			while ($V = mysqli_fetch_assoc($qrr)) {
+				echo "<tr>";
+				for ($o = 0; $o <= 4; $o++) {
+					echo "<td>";
+					echo $V[$o];
+					echo "</td>";
+				}
+				echo "</tr>";
+			}
+			?>
+      
+      
+      
    </tbody>
 </table>
    
