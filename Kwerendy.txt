@@ -1,0 +1,7 @@
+kw1  SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC;
+
+kw2 SELECT COUNT(*) FROM przyloty WHERE czas LIKE "10%"
+
+kw3 SELECT `nr_rejsu`,`samoloty.typ` FROM `przyloty`JOIN `samoloty`ON przyloty.samoloty_id = samoloty.id WHERE  `kierunek`= "Warszawa";
+
+kw4 UPDATE `odloty` SET `status_lotu`='[opuznienie 20 min ]' WHERE `nr_rejsu` = "LX5673";
