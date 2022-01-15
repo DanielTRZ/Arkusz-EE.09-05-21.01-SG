@@ -16,7 +16,9 @@
 
   </head>
   <body>
-  <div id="baner1"></div>
+  <div id="baner1">
+      <img src="zad5.png" alt="logo lotnisko">
+  </div>
   <div id="baner2"></div>
   <div id="baner3"></div>
   <div id="glowny"></div>
