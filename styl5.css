@@ -37,7 +37,7 @@ font-family:Garamond;
     background-color:rgb(30,144,255); 
     color:white;
 }
-a{
+a,p{
     padding:20px;
     font-size:200%;
     border-width:1px;
@@ -62,5 +62,5 @@ th{
 table{
     width:100%;
     border-collapse: collapse;
- 
+
 }

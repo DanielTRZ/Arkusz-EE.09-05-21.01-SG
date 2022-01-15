@@ -47,15 +47,24 @@
   <div id="stopka1">
      <?php
       
-      
-      
-      
-      ?>
-      
+      if (isset($_COOKIE["ciasteczko"])) {
+				echo "<b>Miło nam, że nas znowu odwiedziłeś</b>";
+			} else {
+				$cookie_name = "cookie";
+				$cookie_value = "";
+				$cookie_time = time() + 60*60*2;
+				$cookie_path = "";
+				$cookie_domain = "";
+				$cookie_secure  = false;
+				$cookie_httponly = false;
+				setcookie($cookie_name, $cookie_value, $cookie_time, $cookie_path, $cookie_domain, $cookie_secure, $cookie_httponly);
+				echo "<p style='font-style: italic;'>Witaj ponownie na stronie lotniska</p>";
+			}   
+      ?>  
   </div>
   
   <div id="stopka2">
-      <p>Autor:0000000000</p>
+     <p id="1"> Autor:0000000000</p>
   </div>
   
   </body>
