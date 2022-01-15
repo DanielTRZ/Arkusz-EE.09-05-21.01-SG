@@ -24,12 +24,19 @@
   </div>
   <div id="baner3">
   <h3>Przydatne linki</h3>
-  <a href="Kwerendy.txt" target="_blank">Pobierz</a>
+  <a href="Kwerendy.txt" target="_blank">Pobierz...</a>
 
   </div>
-  <div id="glowny"></div>
-  <div id="stopka1"></div>
-  <div id="stopka2"></div>
+  <div id="glowny">
+   
+    
+  </div>
+  <div id="stopka1">
+      
+  </div>
+  <div id="stopka2">
+      <a>Autor: </a>
+  </div>
   </body>
 
 </html>
