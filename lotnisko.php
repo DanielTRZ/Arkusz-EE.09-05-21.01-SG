@@ -48,7 +48,7 @@
      <?php
       
       if (isset($_COOKIE["ciasteczko"])) {
-				echo "<p>Dzień dobry strona używa ciasteczek</p>";
+				echo "<p><b>Dzień dobry strona używa ciasteczek</b></p>";
 			} else {
 				$cookie_name = "cookie";
 				$cookie_value = "";
@@ -64,7 +64,7 @@
   </div>
   
   <div id="stopka2">
-   <sub>Autor:0000000000</sub> 
+   Autor:0000000000
   </div>
   
   </body>
