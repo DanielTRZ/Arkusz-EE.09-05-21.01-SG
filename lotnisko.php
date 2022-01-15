@@ -19,8 +19,14 @@
   <div id="baner1">
       <img src="zad5.png" alt="logo lotnisko">
   </div>
-  <div id="baner2"></div>
-  <div id="baner3"></div>
+  <div id="baner2">
+      <h1>Przyloty</h1>
+  </div>
+  <div id="baner3">
+  <h3>Przydatne linki</h3>
+  <a href="Kwerendy.txt" target="_blank">Pobierz</a>
+
+  </div>
   <div id="glowny"></div>
   <div id="stopka1"></div>
   <div id="stopka2"></div>
