@@ -19,7 +19,9 @@
   <div id="baner1"></div>
   <div id="baner2"></div>
   <div id="baner3"></div>
-
+  <div id="glowny"></div>
+  <div id="stopka1"></div>
+  <div id="stopka2"></div>
   </body>
 
 </html>
