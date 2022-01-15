@@ -14,16 +14,12 @@
   
   <body>
   
-  <div id="baner1">
-      <img src="zad5.png" alt="logo lotnisko">
-  </div>
+  <div id="baner1"><img src="zad5.png" alt="logo lotnisko"></div>
   
-  <div id="baner2">
-      <h1>Przyloty</h1>
-  </div>
+  <div id="baner2"><h1>Przyloty</h1></div>
   
   <div id="baner3">
-  <h3>Przydatne linki</h3>
+  <h3>przydatne linki</h3>
   <a href="Kwerendy.txt" target="_blank">Pobierz...</a>
   </div>
   
@@ -58,7 +54,7 @@
 				$cookie_secure  = false;
 				$cookie_httponly = false;
 				setcookie($cookie_name, $cookie_value, $cookie_time, $cookie_path, $cookie_domain, $cookie_secure, $cookie_httponly);
-				echo "<p style='font-style: italic;'>Witaj ponownie na stronie lotniska</p>";
+				echo "<p  style='font-style: italic;'>Witaj ponownie na stronie lotniska</p>";
 			}   
       ?>  
   </div>
