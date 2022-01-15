@@ -28,11 +28,29 @@
   </div>
   
   <div id="glowny">
+  <table>
+   <thead>
+      <tr>
+         <th>czas</th> <th>kierunek</th> <th>numer rejsu</th> <th>status</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Nowak</td> <td>4+gggg</td> <td>Mazur</td> <td>3-</td>
+      </tr>
+   </tbody>
+</table>
    
     
   </div>
   
   <div id="stopka1">
+     <?php
+      
+      
+      
+      
+      ?>
       
   </div>
   
